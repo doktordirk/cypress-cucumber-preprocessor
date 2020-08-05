@@ -14,18 +14,6 @@
   "bin": {
     "cypress-tags": "cypress-tags.js"
   },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
-      "pre-commit": "lint-staged && jest"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/TheBrainFamily/cypress-cucumber-preprocessor.git"
@@ -43,13 +31,13 @@
   },
   "homepage": "https://github.com/TheBrainFamily/cypress-cucumber-preprocessor#readme",
   "dependencies": {
-    "@cypress/browserify-preprocessor": "^3.0.1",
+    "@cypress/browserify-preprocessor": "latest",
     "chai": "^4.1.2",
     "chokidar": "^2.0.4",
     "cosmiconfig": "^4.0.0",
-    "cucumber": "^4.2.1",
-    "cucumber-expressions": "^6.0.1",
-    "cucumber-tag-expressions": "^1.1.1",
+    "cucumber": "latest",
+    "cucumber-expressions": "latest",
+    "cucumber-tag-expressions": "latest",
     "debug": "^3.0.1",
     "gherkin": "^5.1.0",
     "glob": "^7.1.2",
@@ -59,7 +47,7 @@
   },
   "devDependencies": {
     "commitizen": "^4.0.3",
-    "cypress": "^3.8.3",
+    "cypress": "latest",
     "cz-conventional-changelog": "^3.0.2",
     "eslint": "^4.16.0",
     "eslint-config-airbnb-base": "^13.0.0",
